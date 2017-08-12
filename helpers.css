@@ -44,3 +44,11 @@
  * All elements within this class floats to the right
  */
 .allright > * { float: right; }
+
+
+/**
+ * Round borders
+ */
+.radius: {
+	border-radius: 5px;
+}
