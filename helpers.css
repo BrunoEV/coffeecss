@@ -1,0 +1,10 @@
+/**
+ * CSS Tables
+ */
+.table { display: table; }
+.table > * { display: table-row; }
+.table > * > * { display: table-cell;}
+
+.table.top > div > div, .table > div > div.top { vertical-align: top; }
+.table.middle > * > *, .table > div > div.middle { vertical-align: middle; }
+.table.bottom > div > div, .table > div > div.bottom { vertical-align: bottom; }
