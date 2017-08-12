@@ -5,6 +5,42 @@
 .table > * { display: table-row; }
 .table > * > * { display: table-cell;}
 
+
 .table.top > * > *, .table > * > *.top { vertical-align: top; }
 .table.middle > * > *, .table > * > *.middle { vertical-align: middle; }
 .table.bottom > * > *, .table > * > *.bottom { vertical-align: bottom; }
+
+
+
+
+/**
+ * Text align: left, right, center and justify
+ */
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+.justify { text-align: justify; }
+
+
+/**
+ * The element floats to the left
+ */
+.fleft, .allright > .fleft { float: left; }
+
+
+/**
+ * The element floats to the right
+ */
+.fright, .allleft > .fright { float: right; }
+
+
+/**
+ * All elements within this class floats to the left
+ */
+.allleft > * { float: left; }
+
+
+/**
+ * All elements within this class floats to the right
+ */
+.allright > * { float: right; }
