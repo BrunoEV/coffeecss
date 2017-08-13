@@ -58,6 +58,13 @@
     align-items: center;
 }
 
+/**
+ * Horizontal alignment for flex (text-align doesn't work)
+ */
+.flex.left { justify-content: left; }
+.flex.right { justify-content: right; }
+.flex.center { justify-content: center; }
+
 
 /**
  * Round borders
@@ -65,3 +72,35 @@
 .radius: {
 	border-radius: 5px;
 }
+
+/**
+ * 
+ */
+.circle {
+    border-radius: 50%;
+}
+
+/**
+ * Position
+ */
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+
+/**
+ * Adapts to the container's size, but never more than the image size
+ */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/**
+ * Hides an element
+ */
+.hide { display: none; }
+
