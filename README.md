@@ -13,6 +13,26 @@
 </div>
 ```
 
-<div style="background: #f8f9fa !important;padding: 20px;margin-bottom: 20px;">
-<div style="text-align: left;">Text aligned to the lef, with the class .left</div>
+
+``` html
+<div class="right">
+	Text aligned to the right
 </div>
+```
+
+
+``` html
+<div class="center">
+	Text centered
+</div>
+```
+
+
+``` html
+<div class="justify">
+	Justified text
+</div>
+```
+
+
+
