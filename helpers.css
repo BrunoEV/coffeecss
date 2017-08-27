@@ -11,8 +11,6 @@
 .table.bottom > * > *, .table > * > *.bottom { vertical-align: bottom; }
 
 
-
-
 /**
  * Text align: left, right, center and justify
  */
@@ -23,27 +21,15 @@
 
 
 /**
- * The element floats to the left
+ * The element (or all elements inside of .allleft) floats to the left
  */
-.fleft, .allright > .fleft { float: left; }
+.fleft, .allright > .fleft, .allleft > * { float: left; }
 
 
-/**
- * The element floats to the right
- */
-.fright, .allleft > .fright { float: right; }
-
-
-/**
- * All elements within this class floats to the left
- */
-.allleft > * { float: left; }
-
-
-/**
- * All elements within this class floats to the right
- */
-.allright > * { float: right; }
+ /**
+  * The element (or all elements inside of .allright) floats to the right
+  */
+.fright, .allleft > .fright, .allright > * { float: right; }
 
 
 /**
@@ -57,6 +43,7 @@
     -ms-flex-align: center;
     align-items: center;
 }
+
 
 /**
  * Horizontal alignment for flex (text-align doesn't work)
@@ -73,20 +60,11 @@
 	border-radius: 5px;
 }
 
-/**
- * 
- */
-.circle {
-    border-radius: 50%;
-}
 
 /**
- * Position
+ *
  */
-.static { position: static; }
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed; }
+.circle { border-radius: 50%; }
 
 
 /**
@@ -100,7 +78,31 @@ img.responsive {
 
 
 /**
+ * Position
+ */
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+
+/**
  * Hides an element
  */
 .hide { display: none; }
 
+
+/**
+ * Removes borders
+ */
+.no-bl { border-left: 0; }
+.no-br { border-right: 0; }
+.no-bt { border-top: 0; }
+.no-bb { border-bottom: 0; }
+.no-borders { border: 0;}
+
+
+/**
+ * Full size element
+ */
+.full {	width: 100%; }
