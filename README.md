@@ -58,6 +58,7 @@ Using the class .top, .middle and .bottom with the .table class, you can align a
 </div>
 ```
 
+
 If you use .top, .middle or .bottom inside the CSS table, you can modify the default align
 ``` html
 <div class="table top" style="width: 500px;height: 80px;">
@@ -66,5 +67,27 @@ If you use .top, .middle or .bottom inside the CSS table, you can modify the def
 		<div class="bottom">Column #2</div>
 		<div>Column #3</div>
 	</div>
+</div>
+```
+
+
+### Floating elements
+The class fleft and fright allow add a floating element in left of right of the container.
+``` html
+<div>
+	<div class="fright">Element #4</div>
+	<div class="fleft">Element #1</div>
+	<div>Element #2</div>
+	<div>Element #3</div>
+</div>
+```
+
+It's also posible to use .allleft with .fright (or .allright with .fleft), like in this example:
+``` html
+<div class="allright">
+	<div>Element #4</div>
+	<div class="fleft">Element #1</div>
+	<div>Element #3</div>
+	<div>Element #2</div>
 </div>
 ```
